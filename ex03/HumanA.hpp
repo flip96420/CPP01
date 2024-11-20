@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 13:21:35 by codespace         #+#    #+#             */
-/*   Updated: 2024/11/17 13:26:20 by codespace        ###   ########.fr       */
+/*   Updated: 2024/11/20 17:29:26 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMAN_A_HPP
 # define HUMAN_A_HPP
 
-#include <iostream>
+#include "Weapon.hpp"
 
 class HumanA
 {
 private:
-    std::string weapon;
+    Weapon      &weapon;
     std::string name;
 public:
-    HumanA(std::string weapon);
+    HumanA(std::string name, Weapon &weapon);
     ~HumanA();
     void    attack(void);
 };
