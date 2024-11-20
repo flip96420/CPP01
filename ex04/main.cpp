@@ -6,14 +6,13 @@
 /*   By: pschmunk <pschmunk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:59:05 by pschmunk          #+#    #+#             */
-/*   Updated: 2024/11/20 19:53:58 by pschmunk         ###   ########.fr       */
+/*   Updated: 2024/11/20 19:59:15 by pschmunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <string>
 
 int	replace(std::string input, std::string filename, std::string s1, std::string s2)
 {
@@ -57,7 +56,7 @@ int main(int ac, char **av)
 	{
 		std::cout 	<< "Invalid input! Please use the program like this: " << std::endl
 					<< "Argument 1: filename" << std::endl
-					<< "Argument 2: string to replace (cannot be empty)" << std::endl
+					<< "Argument 2: string to replace" << std::endl
 					<< "Argument 3: new string" << std::endl
 					<< "Less or more arguments will be considered as invalid input." << std::endl;
 		return (1);
